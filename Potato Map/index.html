@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div class="col-7">
+        <span><h3>Potato Map</h3></span>
+        <div id="map">
+          <div class="grid" id="grid"></div>
+        </div>
+      </div>
+
+      <div id="details" class="col-5">
+        <div class="score"></div>
+        <div>
+          <span
+            ><h3>Current Season: <span class="seasonText"></span></h3>
+          </span>
+          <hr />
+        </div>
+        <div class="missions"></div>
+
+        <h3>
+          Elapsed Time in Curent Season:
+          <span class="ELementNumber">0</span>
+        </h3>
+
+        <hr />
+        <div class="nextElement"></div>
+      </div>
+    </div>
+
+    <div class="modal hidden">
+      <button>Click Me</button>
+    </div>
+    <script src="missions.js"></script>
+    <script src="elements.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,379 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  background-image: url(./missions_hun/theme.png);
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive; 
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f0f0f0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+
+}
+
+
+#main {
+  padding: 3%;
+  display: flex;
+  width: 100%;
+  position: relative;
+  background-color: rgba(230, 222, 222, 0.7);
+
+}
+.col-7 {
+  padding: 20px; 
+  margin: 10px; 
+}
+
+
+#map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10%;
+  padding: 3%;
+  z-index: -1;
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 1;
+}
+  
+  
+
+table {
+  border-collapse: separate;
+  border-spacing: 3px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  overflow: hidden;
+}
+
+.cell {
+  width: 100%;
+  background-color: lightgoldenrodyellow;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 10%;
+  background-size: cover;
+  width: 3em;
+  height: 3em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cell:hover {
+  transform: scale(1.1); 
+  box-shadow: 2px 2px 4px rgba(1, 1, 1, 0.5); 
+}
+
+#details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  padding: 3% 1% 10% 10%;
+  border-radius: 8px; 
+  max-width: 500px; 
+  margin: 0 auto; 
+}
+
+.details h3 {
+  margin-top: 0; 
+  color: #333; 
+}
+
+.details hr {
+  width: 100%; 
+  border-top: 1px solid #ddd; 
+}
+
+.score {
+  position: relative;
+  margin: 3% auto;
+  width: 100%;
+  display: block;
+  padding: 10px; 
+  align-items: center;
+  justify-content: center;
+  
+  
+
+}
+
+.score:hover {
+  transform: scale(1.1); 
+  box-shadow: 2px 2px 4px rgba(1, 1, 1, 0.5); 
+}
+
+
+.totalPoints {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1.2em;
+  color: #333; 
+  
+}
+.scoreBoxs {
+  align-items: center;
+  justify-content: center;
+}
+
+.scoreBox {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 14px;
+  color: white;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 1 em; 
+  font-weight: bold; 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.scoreBox:hover {
+  transform: scale(1.05); 
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+.score1 {
+  background-color: #7cd061;
+  border: 3px solid green;
+}
+.score2 {
+  background-color: #e3e33d;
+  border: 3px solid gold;
+}
+.score3 {
+  background-color: #c0a144;
+  border: 3px solid #b38600;
+}
+.score4 {
+  background-color: #80d4ff;
+  border: 3px solid #0099e6;
+}
+
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+
+.missions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35%;
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0; 
+  border: 1px solid #dcdcdc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+  .missions {
+    height: auto; 
+    flex-direction: column; 
+  }
+}
+.mission-card {
+  width: 100%;
+  height: 35%;
+  padding: 0px;
+  border: 1px solid #ccc;
+  color: #171515;
+  margin: 1%;
+  border-radius: 14px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease; 
+}
+
+.mission-card:hover {
+  transform: scale(1.03); 
+}
+
+
+.btn {
+  display: block;
+  float: right;
+  margin-top: 50%;
+  padding: 20px;
+}
+button {
+  width: 100px;
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4);
+  background-color: grey;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+  background-color: #666; 
+  transform: translateY(-2px); 
+}
+
+button:active {
+  transform: translateY(1px); 
+}
+
+.nextElement {
+  display: flex;
+}
+
+.right {
+  display: flex;
+  background-color: #fff;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  
+  margin: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+.left {
+  display: block;
+}
+
+.missionDivs {
+  display: block;
+  height: auto;
+  height: 100%;
+  width: 100%;
+  margin: 1%;
+  
+}
+.missionDivs img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.mountain {
+  background-color: rgb(174,119,68);
+  background-image: url(./tiles/mountain_tile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+
+.cell.highlightedCell::before {
+  position: relative;
+  border: 2px solid rgb(225, 233, 225);
+  border-radius: 10%;
+}
+
+[type="water"] {
+  color: blue;
+  background-image: url("/tiles/water_tile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+[type="forest"] {
+  color: blue;
+  background-image: url("/tiles/forest_tile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+[type="farm"] {
+  color: blue;
+  background-image: url("/tiles/plains_tile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+[type="town"] {
+  color: blue;
+  background-image: url("/tiles/village_tile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.highlightMissions img {
+  border: 3px solid rgba(203, 224, 10, 0.989); 
+  border-radius: 5px;
+  transition: transform 0.3s ease; 
+}
+
+.highlightMissions img:hover {
+  transform: scale(1.05); 
+}
+
+
+.mission-card div {
+  padding: 10px; 
+  margin: 5px 0; 
+  background-color: #f9f9f9; 
+  border: 1px solid #eee; 
+  text-align: center; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  
+}
+
+.currentEleText {
+  color: #0a0a0a;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive; 
+}
+
+.time {
+  color: #0a0a0a;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive; 
+}
+
+.season {
+  color: #0a0a0a;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive; 
+}
+
+
+
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8); 
+  backdrop-filter: blur(5px); 
+  -webkit-backdrop-filter: blur(5px); 
+}
+
+.hidden {
+  display: none;
+}

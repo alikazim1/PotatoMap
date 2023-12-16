@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "assets",
+			"path": "../../Downloads/assignment_assets/assets"
+		},
+		{
+			"name": "JavaScript Assignment",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "JavaScript Assignment"
+	}
+}
